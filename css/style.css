@@ -433,7 +433,7 @@ svg {
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
     ),
-    url(../img/mobile/ania-nastya-bg-hero-480.jpg);
+    url(../img/mobile/bg-hero-480x400.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -442,20 +442,20 @@ svg {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .hero {
-        border-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/ania-nastya-bg-hero-768@2x.jpg);
+        border-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/bg-hero-768x400.jpg);
     }
 }
 
 @media (min-width: 1200px) {
     .hero {
         height: 600px;
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/ania-nastya-bg-hero-1600.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/bg-hero-3.jpg);
     }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     .hero {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/ania-nastya-bg-hero-1600@2x.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/bg-hero-3200x1200-2x.jpg);
     }
 }
 
