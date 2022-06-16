@@ -18,7 +18,8 @@
     transition: background-color $duration $timing-function,
     fill $duration $timing-function;
 
-    &:hover, &:focus {
+    &:hover, 
+    &:focus {
         background-color: $accent-color;
         fill: $main-bg-color;
     }

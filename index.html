@@ -13,10 +13,10 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
     />
-    <link 
+    <!-- <link 
         rel="stylesheet" 
         href="./css/style.css"
-    />
+    /> -->
     <link rel="stylesheet" href="./css/main.min.css">
 
     
@@ -24,109 +24,117 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="container header-flex">
-            <nav class="header-flex">
-                <a class="link header-logo" href="./index.html">            
-                    <span class="current">Electro</span><span class="logo-style">Style</span>
-                </a>    
-                <ul class="list nav-main">
-                    <li class="item"><a class="link current" href="./index.html">Студия</a></li>
-                    <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="item"><a class="link" href="#">Контакты</a></li>
+        <div class="container flex flex--header">
+            <a class="link logo logo--black" href="./index.html">            
+                <span class="logo--accent">Electro</span><span class="logo--style">Style</span>
+            </a> 
+            <div class="menu-container" id="menu-container" data-menu>   
+                <nav>
+                    <ul class="list header-nav">
+                        <li class="header-nav__item">
+                            <a class="link header-nav__link header-nav__link--accent" href="./index.html">Студия</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="link header-nav__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="link header-nav__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="list header-contacts">
+                    <li class="header-contacts__item">
+                        <a class="link header-contacts__link" href="mailto:electrostyle4@gmail.com">
+                            <svg class="header-contacts__icon" width="16" height="12">
+                                <use href="./img/svg/sprite.svg#icon-envelope"></use>
+                            </svg>
+                            electrostyle4@gmail.com
+                        </a>
+                    </li>
+                    <li class="header-contacts__item">
+                        <a class="link header-contacts__link" href="tel:+48574528360">
+                            <svg class="header-contacts__icon" width="10" height="16">
+                                <use href="./img/svg/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                            +48574528360
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="list header-info">
-                <li class="item">
-                    <a class="link" href="mailto:electrostyle4@gmail.com">
-                        <svg class="icon" width="16" height="12">
-                            <use href="./img/svg/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        electrostyle4@gmail.com
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="tel:+48574528360">
-                        <svg class="icon" width="10" height="16">
-                            <use href="./img/svg/sprite.svg#icon-smartphone"></use>
-                        </svg>
-                        +48574528360
-                    </a>
-                </li>
-            </ul>
-        </div>  
-        <!-- <button 
-            type="button"
-            class="button-menu"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button    
-        >
-            <svg 
-                width="40"
-                height="40"
-                aria-label="Переключатель мобильного меню"
+            </div>
+            <!-- <button 
+                type="button"
+                class="button-menu"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button    
             >
-                <use class="icon-burger" href="./img/svg/sprite.svg#icon-burger"></use>
-                <use class="icon-cross" href="./img/svg/sprite.svg#icon-close-menu"></use>
-            </svg>
-        </button> -->
+                <svg 
+                    width="40"
+                    height="40"
+                    aria-label="Переключатель мобильного меню"
+                >
+                    <use class="icon-burger" href="./img/svg/sprite.svg#icon-burger"></use>
+                    <use class="icon-cross" href="./img/svg/sprite.svg#icon-close-menu"></use>
+                </svg>
+            </button> -->
+        </div>
     </header>
 
     <!-- Main block -->
     <main>
         <section class="hero">
-            <h1 class="hero-title">Избавление от нежелательных волос навсегда</h1>
-            <button class="button primary" data-modal-open>Заказать услугу</button>
+            <h1 class="hero__title">Избавление от нежелательных волос навсегда</h1>
+            <button class="button-primary" data-modal-open>Заказать услугу</button>
         </section>
         
         <!-- Advanteges -->
-        <section class="section feature">
+        <section class="feature">
             <div class="container">
-                <h2 class="hidden">
+                <h2 class="visually-hidden">
                     Преимущества
                 </h2>
-                <ul class="list flex feature-list">
-                    <li class="item">
-                        <div class="thumb">
-                            <svg class="icon">
+                <ul class="list feature-list">
+                    <li class="feature-list__item">
+                        <div class="feature-list__thumb">
+                            <svg class="feature-list__icon">
                                 <use href="./img/svg/sprite.svg#icon-antena"></use>
                             </svg>
                         </div>
-                        <h3 class="title">Внимание к клиенту</h3>
-                        <p class="text">
+                        <h3 class="feature-list__title">Внимание к клиенту</h3>
+                        <p class="feature-list__text">
                             Идейные соображения, а также начало повседневной работы по формированию позиции...
                         </p>
                     </li>
-                    <li class="item">
-                        <div class="thumb">
-                            <svg class="icon">
+                    <li class="feature-list__item">
+                        <div class="feature-list__thumb">
+                            <svg class="feature-list__icon">
                                 <use href="./img/svg/sprite.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="title">Пунктуальность</h3>
-                        <p class="text">
+                        <h3 class="feature-list__title">Пунктуальность</h3>
+                        <p class="feature-list__text">
                             Задача организации, в особенности же рамки и место обучения кадров влечет за собой...
                         </p>
                     </li>
-                    <li class="item">
-                        <div class="thumb">
-                            <svg class="icon">
+                    <li class="feature-list__item">
+                        <div class="feature-list__thumb">
+                            <svg class="feature-list__icon">
                                 <use href="./img/svg/sprite.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="title">Планирование</h3>
-                        <p class="text">
+                        <h3 class="feature-list__title">Планирование</h3>
+                        <p class="feature-list__text">
                             Равным образом консультация с широким активом в значительной степени обуславливает...
                         </p>
                     </li>
-                    <li class="item">
-                        <div class="thumb">
-                            <svg class="icon">
+                    <li class="feature-list__item">
+                        <div class="feature-list__thumb">
+                            <svg class="feature-list__icon">
                                 <use href="./img/svg/sprite.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="title">Современные технологии</h3>
-                        <p class="text">
+                        <h3 class="feature-list__title">Современные технологии</h3>
+                        <p class="feature-list__text">
                             Значимость этих проблем настолько очевидна, что реализация плановых заданий...
                         </p>
                     </li>
@@ -135,41 +143,50 @@
         </section>
 
         <!-- Example projects -->
-        <section class="section">
+        <section class="section examples">
             <div class="container">
-                <h2 class="section-title">Чем я занимаюсь</h2>
-                <ul class="list flex examples-list">
-                    <li class="item">
+                <h2 class="section__title">Чем я занимаюсь</h2>
+                <ul class="list examples-list">
+                    <li class="examples-list__item">
                         <img
-                            src="./img/img-1.jpg" 
+                            srcset="
+                                ./img/desktop/examples/electro370.jpg 1x,
+                                ./img/desktop/examples/electro370@2x.jpg 2x
+                            "
+                            src="./img/desktop/examples/electro370.jpg" 
                             alt="electroepilation" 
                             width="370"
-                            height="450"
                         >
-                        <div class="thumb">
-                            <h3 class="text">Электроэпиляция</h3>
+                        <div class="examples-list__thumb">
+                            <h3 class="examples-list__text">Электроэпиляция</h3>
                         </div>
                     </li>
-                    <li class="item">
+                    <li class="examples-list__item">
                         <img
-                            src="/img/img-2.jpg" 
+                            srcset="
+                                ./img/desktop/shugaring-370.jpg 1x,
+                                ./img/desktop/shugaring-370@2x.jpg 2x
+                            "
+                            src="./img/desktop/examples/shugaring-370.jpg" 
                             alt="shugaring" 
                             width="370"
-                            height="450"
                         >
-                        <div class="thumb">
-                            <h3 class="text">Шугаринг</h3>
+                        <div class="examples-list__thumb">
+                            <h3 class="examples-list__text">Шугаринг</h3>
                         </div>
                     </li>
-                    <li class="item">
+                    <li class="examples-list__item">
                         <img    
-                            src="./img/img-3.jpg" 
+                            srcset="
+                                ./img/desktop/examples/vosk-370.jpg 1x,
+                                ./img/desktop/examples/vosk-370@2x.jpg
+                            "
+                            src="./img/desktop/examples/vosk-370.jpg" 
                             alt="vosk-epilation" 
                             width="370"
-                            height="450"
                         >
-                        <div class="thumb">
-                            <h3 class="text">Восковая эпиляция</h3>
+                        <div class="examples-list__thumb">
+                            <h3 class="examples-list__text">Восковая эпиляция</h3>
                         </div>
                     </li>
                 </ul>
@@ -179,135 +196,136 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container flex">
-            <div class="footer-address">
-                <a class="link footer-logo" href="index.html">
-                    <span class="current">Electro</span><span class="logo-style">Style</span>            
-                </a>
-                <address class="footer-contacts">
-                    <p class="text">Warszawa, ul. Kasprzaka 31</p>
-                    <a class="link" href="mailto:electrostyle4@gmail.com">electrostyle4@gmail.com</a>
-                    <br>
-                    <a class="link" href="tel:+48574528360">+48574528360</a>
-                </address>
-            </div>
-            <div class="footer-networks">
-                <strong class="text">присоединяйтесь</strong>
-                <ul class="list flex network-list">
-                    <li class="item">
-                        <a href="#" class="link" aria-label="Instagram">
-                            <svg class="icon">
-                                <use href="./img/svg/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#" class="link" aria-label="Facebook">
-                            <svg class="icon">
-                                <use href="./img/svg/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+        <div class="container flex flex-desktop">
+            <div class="flex-tablet">
+                <div class="footer-address">
+                    <a class="link logo logo--white" href="index.html">
+                        <span class="logo--accent">Electro</span><span class="logo-style">Style</span>            
+                    </a>
+                    <address class="footer-contacts">
+                        <p class="footer-contacts__text">Warszawa, ul. Kasprzaka 31</p>
+                        <a class="link footer-contacts__link" href="mailto:electrostyle4@gmail.com">electrostyle4@gmail.com</a>
+                        <a class="link footer-contacts__link" href="tel:+48574528360">+48574528360</a>
+                    </address>
+                </div>
+                <div class="footer-networks">
+                    <strong class="footer-networks__text">присоединяйтесь</strong>
+                    <ul class="list network-list">
+                        <li class="network-list__item">
+                            <a href="#" class="link network-list__link network-list__link--dark" aria-label="Instagram">
+                                <svg class="network-list__icon">
+                                    <use href="./img/svg/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="network-list__item">
+                            <a href="#" class="link network-list__link network-list__link--dark" aria-label="Facebook">
+                                <svg class="network-list__icon">
+                                    <use href="./img/svg/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <form class="flex footer-subscribe" autocomplete="off">
-                <div class="form-field">
-                    <label for="footer-email" class="text">
-                        Подпишитесь на рассылку
-                    </label>
-                    <input 
-                        type="email" 
-                        name="email" 
-                        class="subscribe-input"
-                        id="footer-email"
-                        placeholder="E-mail"
-                        >
-                </div>
-                <button type="submit" class="button primary">
+                <label class="footer-subscribe__label">
+                    Подпишитесь на рассылку                
+                <input 
+                    type="email" 
+                    name="e-mail" 
+                    class="footer-subscribe__input"
+                    id="footer-email"
+                    placeholder="E-mail"
+                >
+                </label>
+                <button type="submit" class="button-primary button-primary--flex button-primary--centered">
                     Подписаться
-                    <svg class="icon" width="24" height="24">
+                    <svg class="footer-subscribe__icon" width="24" height="24">
                         <use href="./img/svg/sprite.svg#icon-subscribe"></use>
                     </svg>
                 </button>
             </form>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop--hidden" data-modal>
         <div class="modal">
-            <button class="button" data-modal-close>
+            <button class="button" class="button-close" data-modal-close>
                 <svg class="icon" width="11" height="11">
                     <use href="./img/svg/sprite.svg#icon-close-modal"></use>
                 </svg>
             </button>
-            <strong class="text">
+            <strong class="modal__text">
                 Оставьте свои данные, мы Вам перезвоним
             </strong>
-            <form class="modal-form" autocomplete="off">
-                <div class="form-field">
-                    <label for="modal-name" class="form-label">Имя</label>
-                    <div class="input-block">
+            <form class="form-data" autocomplete="off">
+                <div class="form-data__field">
+                    <label for="modal-name" class="form-data__label">Имя</label>
+                    <div class="form-data__block">
                         <input 
                             type="text"
-                            class="form-input"
+                            class="form-data__input"
                             name="name"
                             id="modal-name"
+                            autofocus
                         >
-                        <svg class="input-icon">
+                        <svg class="form-data__icon">
                             <use href="./img/svg/sprite.svg#icon-modalform-name"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="form-field">
-                    <label for="modal-tel" class="form-label">Телефон</label>
-                    <div class="input-block">
+                <div class="form-data__field">
+                    <label for="modal-tel" class="form-data__label">Телефон</label>
+                    <div class="form-data__block">
                         <input 
                             type="tel"
-                            class="form-input"
+                            class="form-data__input"
                             name="tel"
                             id="modal-tel"
                         >
-                        <svg class="input-icon">
+                        <svg class="form-data__icon">
                             <use href="./img/svg/sprite.svg#icon-modalform-tel"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="form-field">
-                    <label for="modal-email" class="form-label">Почта</label>
-                    <div class="input-block">
+                <div class="form-data__field">
+                    <label for="modal-email" class="form-data__label">Почта</label>
+                    <div class="form-data__block">
                         <input 
                             type="email" 
-                            class="form-input"
-                            name="email"
+                            class="form-data__input"
+                            name="e-mail"
                             id="modal-email"
                         >
-                        <svg class="input-icon">
+                        <svg class="form-data__icon">
                             <use href="./img/svg/sprite.svg#icon-modalform-email">Email</use>
                         </svg>
                     </div>
                 </div>
-                <div class="form-field">
-                    <label for="modal-comment" class="form-label">Комментарий</label>
+                <div class="form-data__field">
+                    <label for="modal-comment" class="form-data__label">Комментарий</label>
                     <textarea 
-                        class="form-input form-comment"
+                        class="form-data__input formdata__input--comment"
                         name="comment" 
                         id="modal-comment" 
                         rows="6"
                         placeholder="Введите текст"
                     ></textarea>
                 </div>
-                <div class="form-policy">
-                    <label class="policy-label">
+                <div class="form-data__policy">
+                    <label class="form-data__policy-label">
                         <input 
                             type="checkbox"
                             name="policy"
-                            class="checkbox visually-hidden"
+                            class="form-data__checkbox visually-hidden"
                             checked
                         >
+                        <span class="form-data__checkbox-custom"></span>
                         Соглашаюсь с рассылкой и принимаю
-                        <a href="#" class="current">Условия договора</a>
+                        <a href="#" class="form-data__policy-label--accent">Условия договора</a>
                     </label>
                 </div>
-                <button type="submit" class="button primary">Отправить</button>
+                <button type="submit" class="button-primary button-primary--modal--centered">Отправить</button>
             </form>
         </div>
     </div>
