@@ -61,7 +61,7 @@
                     </li>
                 </ul>
             </div>
-            <!-- <button 
+            <button 
                 type="button"
                 class="button-menu"
                 aria-expanded="false"
@@ -76,15 +76,30 @@
                     <use class="icon-burger" href="./img/svg/sprite.svg#icon-burger"></use>
                     <use class="icon-cross" href="./img/svg/sprite.svg#icon-close-menu"></use>
                 </svg>
-            </button> -->
+            </button>
         </div>
     </header>
 
     <!-- Main block -->
     <main>
         <section class="hero">
-            <h1 class="hero__title">Избавление от нежелательных волос навсегда</h1>
-            <button class="button-primary" data-modal-open>Заказать услугу</button>
+            <h1 id="service_order" class="hero__title">Избавление от нежелательных волос навсегда</h1>
+            <button id="button1" type="button" class="button-primary" data-modal-open>
+                Заказать услугу
+            </button>
+            <form action="#" class="form" id="form" method="post">
+                <input type="text" name="name" placeholder="Имя" id="name" class="form__input" required>
+                <input type="email" name="e-mail" placeholder="E-mail" id="e-mail" class="form__input" required>
+                <input type="tel" name="tel" placeholder="Телефон" id="phone" class="form__input" required>
+                <br>
+                <input type="radio" name="order" value="electroepilation" checked>Электроэпиляция
+                <input type="radio" name="order" value="shugaring">Шугаринг
+                <input type="radio" name="order" value="vosk">Эпиляция воском
+                <br>
+                <button name="submit_button" class="button-primary" id="form__btn" submit>
+                    Заказать услугу
+                </button>
+            </form>            
         </section>
         
         <!-- Advanteges -->
@@ -164,8 +179,8 @@
                     <li class="examples-list__item">
                         <img
                             srcset="
-                                ./img/desktop/shugaring-370.jpg 1x,
-                                ./img/desktop/shugaring-370@2x.jpg 2x
+                                ./img/desktop/examples/shugaring-370.jpg 1x,
+                                ./img/desktop/examples/shugaring-370@2x.jpg 2x
                             "
                             src="./img/desktop/examples/shugaring-370.jpg" 
                             alt="shugaring" 
@@ -212,14 +227,14 @@
                     <strong class="footer-networks__text">присоединяйтесь</strong>
                     <ul class="list network-list">
                         <li class="network-list__item">
-                            <a href="#" class="link network-list__link network-list__link--dark" aria-label="Instagram">
+                            <a href="https://www.instagram.com/electro.style_pl/" class="link network-list__link network-list__link--dark" aria-label="Instagram">
                                 <svg class="network-list__icon">
                                     <use href="./img/svg/sprite.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="network-list__item">
-                            <a href="#" class="link network-list__link network-list__link--dark" aria-label="Facebook">
+                            <a href="https://www.facebook.com/electrostylewarszawa/" class="link network-list__link network-list__link--dark" aria-label="Facebook">
                                 <svg class="network-list__icon">
                                     <use href="./img/svg/sprite.svg#icon-facebook"></use>
                                 </svg>
@@ -329,7 +344,12 @@
             </form>
         </div>
     </div>
+    <script src="./js/burger.js"></script>
+    <script>
+        document.getElementById('button1').onclick = function () {
+            alert('электроэпиляция шугаринг эпиляция воском');
+        };
+    </script>
     <script src="./js/modal.js"></script>
-
 </body>
 </html>
