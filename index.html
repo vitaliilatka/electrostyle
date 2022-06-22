@@ -92,11 +92,20 @@
                 <input type="email" name="e-mail" placeholder="E-mail" id="e-mail" class="form__input" required>
                 <input type="tel" name="tel" placeholder="Телефон" id="phone" class="form__input" required>
                 <br>
-                <input type="radio" name="order" value="electroepilation" checked>Электроэпиляция
-                <input type="radio" name="order" value="shugaring">Шугаринг
-                <input type="radio" name="order" value="vosk">Эпиляция воском
+                <label class="form__radio">
+                    <input type="radio" name="order" value="electroepilation" checked>
+                    Электроэпиляция
+                </label>
+                <label class="form__radio">
+                    <input type="radio" name="order" value="shugaring">
+                    Шугаринг
+                </label>
+                <label class="form__radio">
+                    <input type="radio" name="order" value="vosk">
+                    Эпиляция воском
+                </label>
                 <br>
-                <button name="submit_button" class="button-primary" id="form__btn" submit>
+                <button name="submit_button" class="button__submit" id="form__btn" submit>
                     Заказать услугу
                 </button>
             </form>            
@@ -263,7 +272,7 @@
             </form>
         </div>
     </footer>
-    <div class="backdrop backdrop--hidden" data-modal>
+    <!-- <div class="backdrop backdrop--hidden" data-modal>
         <div class="modal">
             <button class="button" class="button-close" data-modal-close>
                 <svg class="icon" width="11" height="11">
@@ -342,7 +351,7 @@
                 </div>
                 <button type="submit" class="button-primary button-primary--modal--centered">Отправить</button>
             </form>
-        </div>
+        </div> -->
     </div>
     <script src="./js/burger.js"></script>
     <script>
