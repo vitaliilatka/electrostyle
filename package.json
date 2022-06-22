@@ -1,0 +1,25 @@
+{
+  "name": "electrostyle",
+  "version": "1.0.0",
+  "description": "Beauty Web-site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitaliilatka/electrostyle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitaliilatka/electrostyle/issues"
+  },
+  "homepage": "https://github.com/vitaliilatka/electrostyle#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.2",
+    "jest": "^28.1.1",
+    "sass": "^1.52.3"
+  }
+}
